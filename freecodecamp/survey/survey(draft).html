@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="survey-form">
+        <label id="name-label">
+          Name
+          <br />
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your Name"
+            required
+          />
+        </label>
+        <label id="email-label"
+          >Email
+          <br />
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </label>
+
+        <label  id="number-label"
+          >Age(optional)
+          <br />
+          <input
+            id="number"
+            type="number"
+            placeholder="Age"
+            min="0"
+            max="130"
+            required
+          />
+        </label>
+
+        <label>Which option best describes your current role?</label>
+        <select name="" id="dropdown">
+          <option>Select current role</option>
+          <option>work</option>
+          <option>high school</option>
+        </select>
+
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="definitely"
+          ><input
+            value="definitely"
+            type="radio"
+            name="recommend"
+            class="inline"
+            checked
+          />
+          Definitely</label
+        >
+        <label for="maybe"
+          ><input value="maybe" type="radio" name="recommend" class="inline" />
+          Maybe</label
+        >
+        <label for="not-sure"
+          ><input
+            value="not-sure"
+            type="radio"
+            name="recommend"
+            class="inline"
+          />
+          Not Sure</label
+        >
+
+        <label>What is your favorite feature of freeCodeCamp?</label>
+        <select name="" id="dropdown">
+          <option>Select an option</option>
+          <option></option>
+          <option></option>
+        </select>
+        <label
+          >What would you like to see imporved? (Check all that apply)</label
+        >
+        <label
+          ><input
+            value="Front-end Projects"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Front-end Projects</label
+        ><labe
+          ><input
+            value="Back-end Projects"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Back-end Projects</label
+        >
+        <label
+          ><input
+            value="Data Visualization"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Data Visualization</label
+        >
+    
+          <input
+            value="Challenges"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Challenges</label
+        >
+        <label
+          ><input
+            value="Open Sourece Community"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Open Sourece Community</label
+        >
+        <label
+          ><input
+            value="Gitter help rooms"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Gitter help rooms</label
+        >
+        <label
+          ><input
+            value="Videos"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Videos</label
+        >
+        <label
+          ><input
+            value="City Meetups"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          City Meetups</label
+        >
+        <label
+          ><input
+            value="Wiki"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Wiki</label
+        >
+        <label
+          ><input
+            value="Forum"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Forum</label
+        >
+        <label
+          ><input
+            value="Additional Courses"
+            type="checkbox"
+            name="prefer"
+            class="inline"
+          />
+          Additional Courses</label
+        >
+        <div
+          ><label>Any comments or suggestions?</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="3"
+            cols="30"
+            placeholder="Enter your comment here...."
+          ></textarea>
+        </div>
+        <div><button id="submit" type="submit">Submit</button></div>
+    </form>
+  </body>
+</html>
